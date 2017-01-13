@@ -1,2 +1,2 @@
 # itam-responsive
-Rediseno Web itam
+Responsive Design
