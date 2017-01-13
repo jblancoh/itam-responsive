@@ -23,6 +23,11 @@
 .nav-item img {
   max-height: none;
 }
+@media screen and (min-width: 1000px) {
+  .is-offset-1-desktop{
+    margin: 0 !important;
+  }
+}
 
 /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
 html,

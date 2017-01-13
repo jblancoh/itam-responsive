@@ -54,6 +54,7 @@ $html =<<<POV
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
   <link href="css/jqueryUI.css" rel="stylesheet" type="text/css" />
   <!-- <link href="css/estilos.css" rel="stylesheet" type="text/css" /> -->
@@ -125,7 +126,7 @@ $html =<<<POV
   </nav>
   <br>
   <br>
-  <div class="container content">
+  <section class="section content">
     <div class="columns is-mobile is-multiline">
       <div class="column is-10">
         <div class="column is-12">
@@ -140,24 +141,22 @@ $html =<<<POV
               <input type="password" id="clave" name="clave" size="40" maxlength="40" class="required input"/>
             </p>
             <p class="control">
-            <input class="button is-success is-hovered" type="submit" value="Enviar" />
+            <input class="button is-hovered" type="submit" value="Enviar" style="background-color: #00685d; color: #FFF ;"/>
             </p>
             <input type="hidden" name="s" value="$tm" />
           </form>
         </div>
       </div>
     </div>
-
+  </section>
     <!-- Footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="content has-text-centered">
-            <p><strong>CC, algunos derechos reservados</strong></p>
-          </div>
+    <footer class="footer" style="background-color: #00685d; border-top: 3px solid #a8d328;">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p style="color: #FFF"class="subtitle">CC, algunos derechos reservados</p>
         </div>
-      </footer>
-    </div>
-  </center>
+      </div>
+    </footer>
 </body>
 </html>
 
