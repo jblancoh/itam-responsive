@@ -1,0 +1,391 @@
+body {
+	font: 11px/14px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	background: #FFF url(../pics/itam-fondo.jpg) repeat-x center top;
+}
+#container {
+	width: 950px;
+	margin: 0 auto;
+}
+#header {
+	height: 120px;
+}
+.logo {
+	float: left;
+	margin-left: 60px;
+}
+
+
+ h3, h3 a, h3 a:visited, h3 a:active
+ {
+ /*font: 14px "Myriad Pro", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ color: white;
+ text-shadow: black 1px 1px 1px;
+ margin: 0px;*/
+ font-family: 'Duru Sans', sans-serif;
+ font-weight: 400;
+ font-size: 14px;
+ color: #000;
+   padding: 0px 0px 5px 0px;
+}
+
+h1
+{
+  font-family: 'Duru Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  padding: 0px 0px 5px 0px;
+}
+
+h2
+{
+ font-family: 'Duru Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+    padding: 0px 0px 5px 0px;
+}
+
+
+#contenido {
+	min-height: 430px;
+	background-color: #FFF;
+}
+#footer {
+	font-size: 13px;
+	clear: both;
+	color: #5c6466;
+	text-align: center;
+}
+ul a, ul a:hover {
+	font: 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+ul {
+	display: block;
+	list-style-type: none;
+}
+#bloqueizquierdo
+{
+text-align:left;
+  float: left;
+  /*width: 460px;*/
+  width: 640px;
+}
+
+#bloquederecho
+{
+  float: right;
+  width: 295px;
+  margin-right: 5px;
+}
+
+#agenda {
+	margin-top: 20px;
+}
+
+.agendae {
+	margin-left: 10px;
+	font-size: 11px;
+	line-height: 14px;
+}
+.hora {
+	background-color: #ddd;
+}
+.evento {
+	background-color: #efefef;
+}
+
+#fillin
+{
+  border: 1px solid #FFF;
+  color: #000000;
+  width: 290px;
+  height: 290px;
+  /*height: 294px*/
+  overflow: auto;
+}
+
+#cajatwitter
+{
+    background-color: #EEEEEE;
+    border: 1px solid #DFDFDF;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    width: 290px;
+}
+
+#cajatwitter p
+{
+  font-size: 12px;
+
+}
+
+.userlink
+{
+  color: #A31F08;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.hashlink
+{
+  color: #A31F08;
+  text-decoration: none;
+}
+
+.ownerlink
+{
+color: #A31F08; font-weight: bold;
+	text-decoration: none;
+}
+
+.tcounterg
+{
+      color: #666666;
+      font-weight: bold;
+      display:block;
+      height: 15px;
+      text-align:right;
+}
+
+.tcounterr
+{
+      color: red;
+      font-weight: bold;
+      display:block;
+
+      height: 15px;
+      text-align:right;
+}
+
+.tcounterstatus
+{
+      color: green;
+      font-weight: normal;
+      display:inline;
+      font-size: 12px;
+}
+
+.bt
+{
+      background: white url('http://mide.cybercast.com.mx/pics/enviar.jpg') no-repeat top;
+      width: 69px;
+      height: 24px;
+      color:white;
+      border: 0px;
+      cursor: pointer;
+}
+
+.externallink
+{
+  color: #A31F08;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.tbox
+{
+  min-height: 58px;
+  clear: both;
+  background-color: #EFFBEF;
+  text-align:left;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  font: 11px/13px "Lucida Sans", Lucida, Verdana, sans-serif;
+  color: #444;
+}
+
+.timage {height: 48px; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;margin-right:10px;}
+.tdate {color: #5e737c; padding-left:10px;font: 8px "Lucida Sans", Lucida, Verdana, sans-serif;}
+
+.button
+{
+	/*basic styles*/
+	width: 250px;  height: 50px;  color: white; background-color: #99CF00;
+	text-align: center;  font-size: 30px;  line-height: 50px;
+
+	/*gradient styles*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99CF00), to(#6DB700));
+	background: -moz-linear-gradient(19% 75% 90deg,#6DB700, #99CF00);
+
+	/*border styles*/
+	border-left: solid 1px #c3f83a;
+	border-top: solid 1px #c3f83a;
+	border-right: solid 1px #82a528;
+	border-bottom: solid 1px #58701b;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#99CF00), to(#6DB700))
+
+}
+
+.button h3
+{
+	font-size: 20px;
+	line-height: 35px;
+	font-family: helvetica, sans-serif;
+}
+
+.button p
+{
+	font-size: 12px;
+	line-height: 4px;
+	font-family: helvetica, sans-serif;
+}
+table.table1{
+    font-family: "Lucida Sans", Lucida, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tfoot td{
+    color: #9CD009;
+    font-size:32px;
+    text-align:left;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.table1 tfoot th{
+    color:#666;
+}
+.table1 tbody td{
+    padding:10px;
+    text-align:left;
+    background: -moz-linear-gradient(left bottom , #ffecd1 2%, #ffecd1 51%, #ffe3b3 87%) repeat scroll 0 0 transparent;
+    border: 2px solid #E7EFE0;
+    color:#444;
+    text-shadow:-1px -1px 1px #fff;
+}
+th {
+    background: -moz-linear-gradient(left bottom , #ffecd1 2%, #ffecd1 51%, #ffe3b3 87%) repeat scroll 0 0 transparent;
+   /* border-color: #cbd3d2 #cbd3d2 #cbd3d2 #cbd3d2;
+    border-style: solid;
+    border-width: 1px 3px 1px 1px; */
+    color: #666;
+    padding: 0 10px;
+    text-shadow: -1px -1px 1px #FFF;
+}
+#cajatwitter {
+    background-color: #EEEEEE;
+    border: 1px solid #DFDFDF;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+}
+#cajatwitter p {
+    font-size: 12px;
+}
+.userlink {
+    color: #00685D;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hashlink {
+    color: #00685D;
+    text-decoration: none;
+}
+.ownerlink {
+    color: #00685D;
+    font: bold 13px "Lucida Sans",Lucida,Verdana,sans-serif;
+    text-decoration: none;
+}
+.tcounterg {
+    color: #666666;
+    display: block;
+    font-weight: bold;
+    height: 15px;
+    text-align: right;
+}
+.tcounterr {
+    color: red;
+    display: block;
+    font-weight: bold;
+    height: 15px;
+    text-align: right;
+}
+.tcounterstatus {
+    color: green;
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bt {
+    background: url("http://mide.cybercast.com.mx/pics/enviar.jpg") no-repeat scroll center top white;
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    height: 24px;
+    width: 69px;
+}
+.externallink {
+    color: #00685D;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+.tbox {
+    -moz-border-radius: 10px 10px 10px 10px;
+    background-color: #edf7f5;
+    clear: both;
+    color: #444444;
+    font: 10px/12px "Lucida Sans",Lucida,Verdana,sans-serif;
+    margin-bottom: 6px;
+    min-height: 58px;
+    text-align: left;
+}
+.timage {
+    height: 48px;
+    margin: 5px 10px;
+}
+.tdate {
+    color: #5E737C;
+    font: 8px "Lucida Sans",Lucida,Verdana,sans-serif;
+    padding-left: 10px;
+}
+
+table tr > td
+{
+  border-bottom: 1px solid #000;
+}

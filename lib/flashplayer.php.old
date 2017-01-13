@@ -1,0 +1,171 @@
+<?php
+  if($player['id'] == 'flowplayer')
+  {
+    $playerfl = <<<POV
+    <script type="text/javascript" src="http://cybercast.com.mx/streaming/flowplayer-3.2.2.min.js"></script>
+<div class="player" id="fms1" href="ondemand/video.mp4" style="display:block;width:{$flashparams['width']}px;height:{$flashparams['height']}px; margin-left:10px; float:left;"></div>
+		<script language="JavaScript">
+		\$f("fms1", "http://cybercast.com.mx/streaming/flowplayer-3.2.2.swf", {
+
+		  clip: {
+		    url: '$file',
+		    bufferLength: 20,
+		    provider: 'rtmp'
+		  },
+
+		  plugins: {
+
+		    gatracker: {
+		      url: "http://cybercast.com.mx/streaming/flowplayer.analytics-3.1.5.swf",
+		      labels: {
+		        start: "Start",
+		        play: "Play",
+		        pause: "Pause",
+		        resume: "Resume",
+		        seek: "Seek",
+		        stop: "Stop",
+		        finish: "Finish",
+		        mute: "Mute",
+		        unmute: "Unmute",
+		        fullscreen: "Full Screen",
+		        fullscreenexit: "Full Screen Exit"
+		      },
+		      debug: false,
+		      trackingMode: "AS3",
+		      googleId: "UA-17153173-1"
+		    },
+
+		      controls:{
+		      url: 'http://cybercast.com.mx/streaming/flowplayer.controls-3.2.1.swf',
+		      borderRadius: '0px',
+		      timeColor:'#ffffff',
+		      bufferGradient:"none",
+		      slowForward:true,
+		      backgroundColor:"rgba(0, 0, 0,0)",
+		      volumeSliderGradient:"none",
+		      slowBackward:false,
+		      timeBorderRadius:20,
+		      progressGradient:"none",
+		      time:true,
+		      height:26,
+		      volumeColor:"#4599ff",
+		      tooltips:{
+		        marginBottom:5,
+		        scrubber:true,
+		        volume:true,
+		        buttons:false
+		      },
+		      fastBackward:false,
+		      opacity:1,
+		      timeFontSize:12,
+		      border:"0px",
+		      bufferColor:"#a3a3a3",
+		      volumeSliderColor:"#ffffff",
+		      buttonColor:"#ffffff",
+		      mute:true,
+
+		      autoHide:{
+		        enabled:true,
+		        hideDelay:500,
+		        hideStyle:"fade",
+		        mouseOutDelay:500,
+		        hideDuration:400,
+		        fullscreenOnly:true
+		      },
+		      backgroundGradient:"none",
+		      width:"100pct",
+		      display:"block",
+		      sliderBorder:"1px solid rgba(128, 128, 128, 0.7)",
+		      buttonOverColor:"#ffffff",
+		      fullscreen:true,
+		      timeBgColor:"rgb(0, 0, 0, 0)",
+		      scrubberBarHeightRatio:0.2,
+		      bottom:0,"stop":false,
+		      sliderColor:"#000000",
+		      zIndex:1,
+		      scrubberHeightRatio:0.6,
+		      tooltipTextColor:"#ffffff",
+		      sliderGradient:"none",
+		      timeBgHeightRatio:0.8,
+		      volumeSliderHeightRatio:0.6,
+		      timeSeparator:" ",
+		      name:"controls",
+		      volumeBarHeightRatio:0.2,
+		      left:"50pct",
+		      tooltipColor:"rgba(0, 0, 0, 0)",
+		      playlist:false,
+		      durationColor:"#b8d9ff",
+		      play:true,
+		      fastForward:true,
+		      timeBorder:"0px solid rgba(0, 0, 0, 0.3)",
+		      progressColor:"#4599ff",
+		      scrubber:true,
+		      volume:true,
+		      volumeBorder:"1px solid rgba(128, 128, 128, 0.7)",
+		      builtIn:false
+
+
+		    },
+
+		    viral: {
+		      url: 'http://cybercast.com.mx/streaming/flowplayer.viralvideos-3.2.1.swf',
+
+		      share: {
+		        description: '{$flashparams['descripcion']}',
+		        title: 'haz click sobre el icono para compartir este video'
+		      },
+
+		      embed: {
+		        title: 'Copia y pega el siguente codigo en tu pagina'
+		      },
+
+		      email: {
+		        texts: {
+		          title: 'Comparte este video por email',
+		          to: 'Introduce un email',
+		          toSmall: 'multiples correos separados con comas',
+		          message: 'Mensaje personal',
+		          optional: '(opcional)',
+		          from: 'Tu nombre',
+		          fromAddress: 'Tu correo electronico',
+		          Send: 'Enviar'
+		        }
+		      }
+
+		    },
+
+
+		    rtmp: {
+		      url: 'http://cybercast.com.mx/streaming/flowplayer.rtmp-3.2.1.swf',
+		      netConnectionUrl: '$url'
+		    }
+		  }
+
+
+		});
+</script>
+POV;
+  }
+  else if ($player['id'] == 'swfobject')
+  {
+    $playerfl = <<<POV
+    <script type='text/javascript' src='http://cybercast.com.mx/streaming/mediaplayer-viral/swfobject.js'></script>
+
+    <div id='mediaspace' style="float:left; width:{$flashparams['width']}px;height:{$flashparams['height']}px;"></div>
+    
+    <script type="text/javascript">
+      var so = new SWFObject('http://cybercast.com.mx/streaming/mediaplayer-viral/player.swf','mpl','{$flashparams['width']}','{$flashparams['height']}','9');
+      so.addParam('allowscriptaccess','always');
+      so.addParam('allowfullscreen','true');
+      so.addVariable('file', '$file');
+      so.addVariable('provider', 'rtmp');
+      so.addVariable('streamer', '$url');
+      so.addVariable('autostart','true');
+      so.addVariable('bufferlengh', '3');
+      so.write('mediaspace');
+    </script>
+POV;
+  }
+  else
+    $playerfl = '';
+?>

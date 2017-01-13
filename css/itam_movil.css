@@ -1,0 +1,25 @@
+body
+{
+  /*background-color: #6a8e94;*/
+  /* background-color: #9b1538; */
+  
+  /* Color de fondo = marco */
+  background-color: #a8d328;  
+}
+
+/* Boton footer moviles */
+.fondo_footer
+{
+  background-color: #d13330;
+  background-image: -moz-linear-gradient(top, #df3633, #ca7270);
+  background-image: -ms-linear-gradient(top, #df3633, #ca7270);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#df3633), to(#ca7270));
+  background-image: -webkit-linear-gradient(top, #df3633, #ca7270);
+  background-image: -o-linear-gradient(top, #df3633, #ca7270);
+  background-image: linear-gradient(top, #df3633, #ca7270);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#df3633', endColorstr='#ca7270', GradientType=0);
+  /*border-color: #7d3388 #6b2274 #5b1461;*/
+  /*border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*/
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);  
+}
