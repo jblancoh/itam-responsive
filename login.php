@@ -126,7 +126,7 @@ $html =<<<POV
   </nav>
   <br>
   <br>
-  <section class="section content">
+  <section class="section content container">
     <div class="columns is-mobile is-multiline">
       <div class="column is-10">
         <div class="column is-12">
